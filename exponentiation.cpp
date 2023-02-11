@@ -1,8 +1,11 @@
 #include "exponentiation.h"
-#include <cmath>
 
-long long power(int a, int b) {
-	long long result = pow(a, b);
+long long power(static long long a, int b) {
+	int exp = a;
 
-	return result;
+	for (b; b > 1; b--) {
+		a = a * exp;
+	}
+
+	return a;
 }

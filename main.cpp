@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
 			exit(0);
 		default:
 			std::cout << "Такой операции не существует" << std::endl;
-			break;
+			continue;
 		}
 	} while (true);
 

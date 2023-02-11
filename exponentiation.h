@@ -3,6 +3,6 @@
 #ifndef EXPONENTIATION
 #define EXPONENTIATION
 
-long long power(int a, int b);
+long long power(static long long a, int b);
 
 #endif
